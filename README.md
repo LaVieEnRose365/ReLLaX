@@ -12,10 +12,10 @@ cp modified_modeling_llama.py path_to_your_modeling_llama_file (e.g. /conda_envs
 
 ## Finetuning
 ~~~bash
-python ft_script_rella_plus.py --lr 3e-4 --train_size 65536 --train_type sequential --test_type sequential --epochs 5 --bs 256
+python ft_script_rella_plus.py --lr 3e-4 --train_size 65536 --train_type sequential --test_type sequential --epochs 5 --bs 256 --mode rella_plus
 ~~~
 
 ## Inference
 ~~~bash
-python ft_script_rella_plus.py --lr 3e-4 --train_size 65536 --train_type sequential --test_type sequential --epochs 5 --bs 256 --inference --ckpt 1
+python ft_script_rella_plus.py --lr 3e-4 --train_size 65536 --train_type sequential --test_type sequential --epochs 5 --bs 256 --inference --ckpt 1 --mode rella_plus
 ~~~
